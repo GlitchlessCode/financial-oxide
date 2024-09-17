@@ -1,0 +1,17 @@
+<svg width="204" height="204">
+  <path d="M2,22 a20,20 0 0 1 20,-20 h60 a20,20 0 0 1 20,20 v60 a20,20 0 0 0 20,20 h60 a20,20 0 0 1 20,20 v60 a20,20 0 0 1 -20,20 h-160 a20,20 0 0 1 -20,-20 z"
+    fill="none" 
+    stroke-miterlimit="10" 
+    stroke="black"
+    stroke-width="3"
+    stroke-dasharray="6 10"
+    stroke-dashoffset="1"
+    stroke-linecap="round">
+    <animate
+        attributeName="stroke-dashoffset"
+        values="16;0"
+        dur="1s"
+        calcMode="linear"
+        repeatCount="indefinite" />
+    </path>
+</svg>

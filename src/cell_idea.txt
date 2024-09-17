@@ -1,0 +1,19 @@
+When a cell gets assigned a category, remove it from any previous category, 
+then add it to the new category. Each cell should track its category and
+its set. Each category should track its sets (and maybe its cell? idk).
+Each set should actually be a form of graph or tree of cells, and should 
+also track its boundaries.
+
+When a cell is added to a category, check for sets that neighbour or
+envelope the new cell, and then if found, check for neighbouring cells
+within that set. If there are one or more cells, attach the cell to those
+sets, consequently merging sets, as that occurs.
+
+When a cell is removed from a category, split the sets that it is being
+removed from.
+
+To determine all of the corners of a set, simply grab every cell in that
+set, and iterate over that to find corners.
+
+Use A* to determine disconnections, use closed set to fill new graphs. 
+Fill graph from last neighbour via flood fill.
